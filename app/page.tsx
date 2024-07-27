@@ -18,6 +18,7 @@ export default function Home() {
        <Experience />
        <Footer />
       </div>
+      
     </main>
     );
 }
