@@ -7,6 +7,7 @@ import { BackgroundGradientAnimation } from "./GradientBg";
 import { GlobeDemo } from "./GridGlobe";
 import animationData from "@/data/confetti.json";
 import MagicButton from "./MagicButton";
+import { FaDownload } from "react-icons/fa";
 
 export const BentoGrid = ({
   className,
@@ -49,21 +50,25 @@ export const BentoGridItem = ({
   const leftLists = ["ReactJS", "Express", "Typescript"];
   const rightLists = ["REST", "NextJS", "NodeJS"];
 
-  const [copied, setCopied] = useState(false);
+  const [download, setDownload] = useState(false);
 
   const defaultOptions = {
-    loop: copied,
-    autoplay: copied,
+    loop: download,
+    autoplay: download,
     animationData: animationData,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
     },
   };
 
-  const handleCopy = () => {
-    const text = "naitikdhanani20@gmail.com";
-    navigator.clipboard.writeText(text);
-    setCopied(true);
+  const handleDownload = () => {
+    // const text = "naitikdhanani20@gmail.com";
+    // navigator.clipboard.writeText(text);
+    location.href="https://drive.google.com/uc?export=download&id=1gmZ5o3dpbTmF9UBKsIoiQ4YFksRkUv_b"
+    setDownload(true);
+    setTimeout(()=>{
+        setDownload(false);
+    },5000)
   };
 
   return (
@@ -154,17 +159,17 @@ export const BentoGridItem = ({
           {id === 6 && (
             <div className="mt-5 relative">
               <div
-                className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"
+                className={`absolute -bottom-5 right-0 ${download ? "block" : "block"
                   }`}
               >
                 <Lottie options={defaultOptions} height={200} width={400} />
               </div>
 
               <MagicButton
-                title={copied ? "Email is Copied!" : "Copy my email address"}
-                icon={<IoCopyOutline />}
+                title={download ? "Downloading!" : "Download my CV"}
+                icon={<FaDownload />}
                 position="left"
-                handleClick={handleCopy}
+                handleClick={handleDownload}
                 otherClasses="!bg-[#161A31]"
               />
             </div>
