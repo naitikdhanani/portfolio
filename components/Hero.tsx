@@ -6,6 +6,7 @@ import { FaLocationArrow } from "react-icons/fa";
 
 const Hero = () => {
   return (
+    <section id="home">
     <div className="pb-20 pt-36">
       <div>
         <Spotlight
@@ -36,16 +37,10 @@ const Hero = () => {
           className="text-center text-[40px] md:text-5xl lg:text-6xl" words="Transforming concepts into seamless user experiences" />
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
             Hi I'm Naitik , a Software Developer based in India.</p>
-            <a href="#about">
-              <MagicButton
-              title="Show my Work"
-              icon={<FaLocationArrow />}
-              position="right"
-              />
-            </a>
         </div>
       </div>
     </div>
+    </section>
   );
 };
 
