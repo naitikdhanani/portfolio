@@ -103,7 +103,61 @@ export const projects = [
   },
 ];
 
-
+export const skills = [
+  {
+    id:1,
+    img:"./java.svg",
+  },
+  {
+    id:2,
+    img:"./tailwind.svg",
+  },
+  {
+    id:3,
+    img:"./react.svg",
+  },
+  {
+    id:4,
+    img:"./python.svg",
+  },
+  {
+    id:5,
+    img:"./go.svg",
+  },
+  {
+    id:6,
+    img:"./gith.svg",
+  },
+  {
+    id:7,
+    img:"./sql.svg",
+  },
+  {
+    id:8,
+    img:"./js.svg",
+  },
+  {
+    id:9,
+    img:"./postman.svg",
+  },
+  {
+    id:10,
+    img:"./node.svg",
+  },
+  {
+    id:11,
+    img:"./numpy.svg",
+  },
+  {
+    id:12,
+    img:"./next.svg",
+  },
+  {
+    id:13,
+    img:"./typescript.svg",
+  },
+ 
+];
 
 export const companies = [
   {
