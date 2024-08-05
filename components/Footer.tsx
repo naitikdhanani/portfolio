@@ -1,7 +1,7 @@
 "use client"
 import { FaDownload } from "react-icons/fa6";
 
-import { socialMedia } from "@/data";
+import { links, socialMedia } from "@/data";
 import MagicButton from "./ui/MagicButton";
 import Lottie from "react-lottie";
 import { useState } from "react";
@@ -20,7 +20,7 @@ const defaultOptions = {
 };
 
 const handleDownload = () => {
-  location.href="https://drive.google.com/uc?export=download&id=1gmZ5o3dpbTmF9UBKsIoiQ4YFksRkUv_b"
+  location.href=links.sde;
   setDownload(true);
   setTimeout(()=>{
       setDownload(false);

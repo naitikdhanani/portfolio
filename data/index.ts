@@ -67,7 +67,13 @@ export const gridItems = [
     spareImg: "",
   },
 ];
+export const links={
+  sde:" https://drive.google.com/uc?export=download&id=1ObT7oxQJhyEJlaC2sFE8lLkoKUPHw-dZ",
+  analyst:"https://drive.google.com/file/d/14jB45WMFVt2I5HS7UZQ08I8fNOAauBsd/view?usp=sharing",
+  chatbot:"https://custom-chat-gpt-frontend.vercel.app/",
+  kanbanboard:"https://kanbanboard-naitik.vercel.app/"
 
+}
 export const projects = [
   {
     id: 1,
